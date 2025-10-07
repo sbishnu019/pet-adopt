@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PetPal Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="js/load_pets.js"></script>
+    <script src="js/post_pet.js"></script>
+    <script src="js/adopt.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/post_pet.css">
+
+</head>
+<body>
+
+<!-- Top bar -->
+<header class="topbar">
+    <div class="container row">
+        <div class="brand">
+            <div class="logo">🐾</div>
+            <span>Pet Adopt</span>
+        </div>
+        <nav class="nav">
+            <a class="link hide-sm" href="contact_us.html">Contact</a>
+            <button id="openPostPetBtn" class="btn hide-sm">Post a Pet</button>
+            <div class="avatar">M</div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-inner">
+        <h1>Welcome to PetPal Connect</h1>
+        <p>Your one-stop community for pet adoption and pet sitting. Find your new best
+            friend or a trustworthy sitter today.</p>
+        <button class="cta">Browse Pets</button>
+    </div>
+</section>
+
+<div id="petModal" class="modal">
+    <div class="modal-content">
+        <span id="closePostPetBtn" class="close">&times;</span>
+        <h2>Post a Pet</h2>
+        <form id="petForm">
+            <label>Name: <input type="text" id="petName" required></label>
+            <label>Breed: <input type="text" id="petBreed" required></label>
+            <label>Location: <input type="text" id="petLocation" required></label>
+            <label>Age: <input type="text" id="petAge" required></label>
+            <label>Image URL: <input type="url" id="petImage" required></label>
+            <div class="form-actions">
+                <button type="button" id="cancelBtn" class="btn">Cancel</button>
+                <button type="submit" class="btn">Save Pet</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Search -->
+<div class="container search-wrap">
+    <div class="search">
+        <input type="text" placeholder="Search by location or breed…" />
+        <select>
+            <option>All Species</option>
+            <option>Dogs</option>
+            <option>Cats</option>
+            <option>Birds</option>
+            <option>Small Pets</option>
+        </select>
+    </div>
+</div>
+
+<!-- Cards -->
+<main class="container">
+    <div id="pet-grid" class="grid"></div>
+</main>
+
+<footer class="footer">
+    © 2025 Pet Adopt. All rights reserved.
+</footer>
+
+</body>
+</html>

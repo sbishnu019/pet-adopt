@@ -1,0 +1,31 @@
+/* Contact Us page specific styles */
+form#contactForm {
+  background: #fff;
+  border: 1px solid var(--ring);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+#contactForm label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid var(--ring);
+  border-radius: 10px;
+  outline: none;
+  font: inherit;
+}
+
+#contactForm .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
