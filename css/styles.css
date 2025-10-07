@@ -103,3 +103,9 @@ html,body { margin:0; font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto
     .hero{ min-height:320px; }
     .card img{ height:220px; }
 }
+
+
+/* Global anchor reset: remove blue color and underline */
+a { color: var(--text); text-decoration: none; }
+a:visited { color: var(--text); }
+a:hover { text-decoration: none; }
